@@ -15,6 +15,8 @@ int main() {
     // process & output
     for (int num = 1000; num <= endRange; num++) {
         if (num % 5 == 0) {
+            /* https://pythonprinciples.com/blog
+            /converting-integer-to-string-in-python/ */
             output = std::to_string(num);
         } else {
             output += " " + std::to_string(num);

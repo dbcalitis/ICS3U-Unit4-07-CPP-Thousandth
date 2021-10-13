@@ -10,10 +10,10 @@
 int main() {
     // This function prints all numbers from 1000 to 2000
     std::string output;
-    int endRange = 2000;
+    const int END_RANGE = 2000;
 
     // process & output
-    for (int num = 1000; num <= endRange; num++) {
+    for (int num = 1000; num <= END_RANGE; num++) {
         if (num % 5 == 0) {
             /* https://pythonprinciples.com/blog
             /converting-integer-to-string-in-python/ */
@@ -22,7 +22,7 @@ int main() {
             output += " " + std::to_string(num);
         }
 
-        if (num % 5 == 4 || num == endRange) {
+        if (num % 5 == 4 || num == END_RANGE) {
             std::cout << output << std::endl;
         }
     }
